@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>師匠募集条件編集 - ミライ図</title>
+  <style>
+    body { margin:0; font-family:"Noto Sans JP",sans-serif; background:#fff0f0; }
+    header { background:#e12a2a; color:white; padding:20px; text-align:center; font-size:24px; }
+    .content { padding:20px; }
+    .section {
+      background:white; padding:20px; margin-bottom:20px;
+      border-radius:12px; box-shadow:0 0 10px rgba(0,0,0,0.1);
+    }
+    select, input {
+      width:100%; padding:12px; margin-bottom:15px;
+      border-radius:8px; border:1px solid #ccc; font-size:16px;
+    }
+    .btn {
+      padding:12px 20px; background:#e12a2a; color:white;
+      border:none; border-radius:8px; cursor:pointer; font-size:18px;
+    }
+  </style>
+</head>
+<body>
+
+<header>師匠募集条件編集</header>
+
+<div class="content">
+
+  <div class="section">
+    <h2>募集条件</h2>
+
+    <select>
+      <option>募集業界を選択</option>
+      <option>伝統工芸</option>
+      <option>農業</option>
+      <option>漁業</option>
+      <option>建築</option>
+      <option>整備・修理</option>
+      <option>飲食</option>
+      <option>IT・デジタル</option>
+    </select>
+
+    <select>
+      <option>必要技術レベル</option>
+      <option>未経験OK</option>
+      <option>初心者</option>
+      <option>中級</option>
+      <option>上級</option>
+    </select>
+
+    <button class="btn" onclick="alert('保存しました')">保存する</button>
+  </div>
+
+</div>
+
+</body>
+</html>
