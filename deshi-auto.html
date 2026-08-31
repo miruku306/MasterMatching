@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>オートマッチング（弟子） - ミライ図</title>
+  <style>
+    body { margin:0; font-family:"Noto Sans JP",sans-serif; background:#eef3ff; }
+    header { background:#2a7de1; color:white; padding:20px; text-align:center; font-size:24px; }
+    .content { padding:20px; }
+    .result {
+      background:white; padding:20px; margin-bottom:20px;
+      border-radius:12px; box-shadow:0 0 10px rgba(0,0,0,0.1);
+    }
+    .btn {
+      padding:12px 20px; background:#2a7de1; color:white;
+      border:none; border-radius:8px; cursor:pointer; font-size:18px;
+    }
+  </style>
+</head>
+<body>
+
+<header>オートマッチング（弟子）</header>
+
+<div class="content">
+
+  <h2>あなたにおすすめの師匠</h2>
+
+  <div id="list"></div>
+
+</div>
+
+<script>
+  const data = [
+    { name:"佐藤工房（木工）", score:92, area:"新潟市" },
+    { name:"田中酒造（酒蔵）", score:88, area:"長岡市" }
+  ];
+
+  const list = document.getElementById("list");
+
+  data.forEach(d => {
+    const div = document.createElement("div");
+    div.className = "result";
+    div.innerHTML = `
+      <h3>${d.name}</h3>
+      <p>マッチング率：${d.score}%</p>
+      <p>地域：${d.area}</p>
+      <button class="btn" onclick="location.href='match-success.html'">弟子入り希望を送る</button>
+    `;
+    list.appendChild(div);
+  });
+</script>
+
+</body>
+</html>
