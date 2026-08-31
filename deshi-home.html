@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>弟子ホーム - ミライ図</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Noto Sans JP", sans-serif;
+      background: #eef3ff;
+    }
+
+    header {
+      background: #2a7de1;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    nav {
+      background: #fff;
+      padding: 15px;
+      display: flex;
+      justify-content: space-around;
+      border-bottom: 1px solid #ccc;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #2a7de1;
+      font-size: 18px;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .btn {
+      padding: 12px 20px;
+      background: #2a7de1;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+
+<header>弟子専用ホーム</header>
+
+<nav>
+  <a href="deshi-profile.html">プロフィール編集</a>
+  <a href="deshi-search.html">手動マッチング</a>
+  <a href="deshi-auto.html">オートマッチング</a>
+  <a href="deshi-scouts.html">スカウト一覧</a>
+</nav>
+
+<div class="content">
+
+  <div class="section">
+    <h2>あなたのプロフィール</h2>
+    <p>希望業界：未設定</p>
+    <p>希望職種：未設定</p>
+    <p>技術レベル：未設定</p>
+    <button class="btn" onclick="location.href='deshi-profile.html'">プロフィールを編集する</button>
+  </div>
+
+  <div class="section">
+    <h2>おすすめの師匠（オートマッチング）</h2>
+    <p>あなたに合いそうな師匠を自動で表示します。</p>
+    <button class="btn" onclick="location.href='deshi-auto.html'">おすすめを見る</button>
+  </div>
+
+</div>
+
+</body>
+</html>
