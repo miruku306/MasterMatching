@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ミライ図 - 技術継承マッチング</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Noto Sans JP", sans-serif;
+      background: url('background.jpg') center/cover no-repeat;
+      backdrop-filter: blur(3px);
+      text-align: center;
+      color: #fff;
+    }
+
+    .overlay {
+      background: rgba(0,0,0,0.45);
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+
+    .btn-container {
+      display: flex;
+      gap: 40px;
+    }
+
+    .btn {
+      padding: 20px 40px;
+      font-size: 28px;
+      border-radius: 12px;
+      cursor: pointer;
+      border: none;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    .btn-deshi {
+      background-color: #2a7de1;
+      color: white;
+    }
+
+    .btn-shisho {
+      background-color: #e12a2a;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<div class="overlay">
+  <h1>弟子入りから始まる、新潟のミライ図。</h1>
+  <p>技術を学びたい若者と、技術を伝えたい師匠をつなぐ新しいマッチングサービス。</p>
+
+  <div class="btn-container">
+    <button class="btn btn-deshi" onclick="location.href='deshi-login.html'">
+      弟子になりたい！
+    </button>
+
+    <button class="btn btn-shisho" onclick="location.href='shisho-login.html'">
+      師匠になりたい！
+    </button>
+  </div>
+</div>
+
+</body>
+</html>
