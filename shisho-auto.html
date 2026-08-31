@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>オートマッチング（師匠） - ミライ図</title>
+  <style>
+    body { margin:0; font-family:"Noto Sans JP",sans-serif; background:#fff0f0; }
+    header { background:#e12a2a; color:white; padding:20px; text-align:center; font-size:24px; }
+    .content { padding:20px; }
+    .result {
+      background:white; padding:20px; margin-bottom:20px;
+      border-radius:12px; box-shadow:0 0 10px rgba(0,0,0,0.1);
+    }
+    .btn {
+      padding:12px 20px; background:#e12a2a; color:white;
+      border:none; border-radius:8px; cursor:pointer; font-size:18px;
+    }
+  </style>
+</head>
+<body>
+
+<header>オートマッチング（師匠）</header>
+
+<div class="content">
+
+  <h2>あなたにおすすめの弟子</h2>
+
+  <div id="list"></div>
+
+</div>
+
+<script>
+  const data = [
+    { name:"山田太郎（20歳）", score:90, area:"新潟市" },
+    { name:"鈴木花子（22歳）", score:85, area:"長岡市" }
+  ];
+
+  const list = document.getElementById("list");
+
+  data.forEach(d => {
+    const div = document.createElement("div");
+    div.className = "result";
+    div.innerHTML = `
+      <h3>${d.name}</h3>
+      <p>マッチング率：${d.score}%</p>
+      <p>地域：${d.area}</p>
+      <button class="btn" onclick="location.href='match-success.html'">スカウトする</button>
+    `;
+    list.appendChild(div);
+  });
+</script>
+
+</body>
+</html>
