@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>師匠ホーム - ミライ図</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Noto Sans JP", sans-serif;
+      background: #fff0f0;
+    }
+
+    header {
+      background: #e12a2a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    nav {
+      background: #fff;
+      padding: 15px;
+      display: flex;
+      justify-content: space-around;
+      border-bottom: 1px solid #ccc;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #e12a2a;
+      font-size: 18px;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .btn {
+      padding: 12px 20px;
+      background: #e12a2a;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+
+<header>師匠専用ホーム</header>
+
+<nav>
+  <a href="shisho-profile.html">募集条件編集</a>
+  <a href="shisho-search.html">手動マッチング</a>
+  <a href="shisho-auto.html">オートマッチング</a>
+  <a href="shisho-requests.html">弟子入り希望一覧</a>
+</nav>
+
+<div class="content">
+
+  <div class="section">
+    <h2>あなたの募集条件</h2>
+    <p>募集業界：未設定</p>
+    <p>募集職種：未設定</p>
+    <p>必要技術レベル：未設定</p>
+    <button class="btn" onclick="location.href='shisho-profile.html'">募集条件を編集する</button>
+  </div>
+
+  <div class="section">
+    <h2>おすすめの弟子（オートマッチング）</h2>
+    <p>あなたに合いそうな弟子を自動で表示します。</p>
+    <button class="btn" onclick="location.href='shisho-auto.html'">おすすめを見る</button>
+  </div>
+
+</div>
+
+</body>
+</html>
